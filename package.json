@@ -1,0 +1,8 @@
+{
+  "name": "de-store-synger",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-compile-handlebars": "^0.3.3"
+  }
+}

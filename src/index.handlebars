@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>De store synger</title>
+		<meta name="description" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="favicon.ico">        
+        <link href="content/stylesheets/reset.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+        <link href="content/stylesheets/de-store-synger.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="startpage-view">
+
+        <div class="page-header">
+            {{#each songs}}
+            <div class="background {{id}}"></div>
+            {{/each}}
+            <div class="container">
+                <a href="#main" data-scroll class="de-store-synger">
+                    <img src="content/images/de-store-synger-logo.png" alt="De Store Synger">
+                </a>
+
+                <div class="outgoing-navigation">
+                    <a href="#" class="navigate purchase-album">Køb albummet her</a>
+                    <a href="https://www.facebook.com/pages/De-Store-Synger/308445896006536" class="navigate facebook-group">
+                        <img src="content/images/facebook-icon.jpg" alt="De Store Synger på Facebook">
+                        <span class="tooltip">Gå til De Store Synger's facebook gruppe</span>
+                    </a>
+                </div>
+            </div>                
+        </div>
+
+        <div class="container" id="main">
+            <nav class="song-navigation">
+                {{#each songs}}
+                <a data-scroll href="#{{id}}" class="song-cover-item">
+                    <img src="/content/images/covers/{{coverImageUrl}}">
+                    <h1>{{title}}</h1>
+                    <p>{{artist}}</p>
+                </a>
+                {{/each}}
+            </nav>
+        </div>
+
+        <div class="songs">
+            {{#each songs}}
+            <article class="song-item" id="{{id}}">
+                <div class="container">       
+                    <div class="song-cover-item">
+                        <img src="/content/images/covers/{{coverImageUrl}}">
+                        <h1>{{title}}</h1>
+                        <p>{{artist}}</p>
+                    </div>
+
+                    <!--//www.youtube.com/embed/{{youtubeId}}?rel=0&amp;showinfo=0-->
+                    <iframe class="video-player" src="" frameborder="0" allowfullscreen>
+                        Din browser understøtter ikke frames...
+                    </iframe>   
+                </div>
+            </article>
+            {{/each}}
+        </div>        
+        
+        <footer>
+            <div class="container">
+            </div>
+        </footer>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="content/scripts/vendor/setImmediate.js"></script>
+        <script type="text/javascript" src="content/scripts/vendor/bind-polyfill.min.js"></script>
+        <script type="text/javascript" src="content/scripts/vendor/smooth-scroll.min.js"></script>
+        <script type="text/javascript" src="content/scripts/app.js"></script>
+	</body>
+</html>
