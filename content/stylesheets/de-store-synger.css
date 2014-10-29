@@ -165,6 +165,9 @@ a.song-cover-item:hover {
   transition: opacity linear 0.4s;
   z-index: -1;
 }
+.page-header .de-store-synger {
+  margin-left: 10px;
+}
 .page-header .de-store-synger img {
   width: 88px;
 }
@@ -258,6 +261,9 @@ footer {
   }
 }
 @media (min-width: 1024px) {
+  .page-header .de-store-synger {
+    margin-left: 0;
+  }
   .navigate.purchase-album {
     font-size: 22px;
   }
