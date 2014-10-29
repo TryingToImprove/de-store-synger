@@ -18,28 +18,8 @@ body {
     background: -ms-linear-gradient(top,  rgba(218,244,241,1) 0%,rgba(243,207,221,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(218,244,241,1) 0%,rgba(243,207,221,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#daf4f1', endColorstr='#f3cfdd',GradientType=0 ); /* IE6-8 */
-
-    padding-top:179px;
-
-    &.startpage-view{
-        padding-top:0;
-        
-        .page-header{
-            position:static;
-            background:transparent;
-            padding:15px 0;
-            
-            .background {
-                display:none;
-            }
-            
-            .de-store-synger{
-                img {
-                    width:273px;
-                }
-            } 
-        }
-    }
+    
+    padding-top:70px;
 }
 
 h1{
@@ -196,7 +176,7 @@ a.song-cover-item{
         display: inline-block;
         padding: 10px;
         vertical-align: top;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
         margin-right: 10px;
@@ -209,7 +189,7 @@ a.song-cover-item{
     }
     
     &.facebook-group{
-        display:inline-block;
+        display:none;
         background:#FFF;
         position: relative;
         
@@ -253,9 +233,40 @@ footer {
             width:50%;
         }
     }    
+    
+    .navigate {
+        &.facebook-group{
+            display: inline-block;
+            margin-right:10px;
+        }
+    }
 }
 
 @media (min-width: 966px){ 
+    body{    
+        padding-top:179px;
+
+        &.startpage-view{
+            padding-top:0;
+
+            .page-header{
+                position:static;
+                background:transparent;
+                padding:15px 0;
+
+                .background {
+                    display:none;
+                }
+
+                .de-store-synger{
+                    img {
+                        width:273px;
+                    }
+                } 
+            }
+        }
+    }
+    
     .song-item{
         .song-cover-item{
             width:204px;
@@ -275,6 +286,18 @@ footer {
 }
 
 @media (min-width: 1024px){    
+    
+    .navigate {
+        &.purchase-album{
+            font-size:22px;
+        }
+        
+        &.facebook-group{
+            display: inline-block;
+            margin-right:0;
+        }
+    }
+    
     .song-navigation{
         .clearfix();
         margin-top:20px;
