@@ -108,7 +108,7 @@ a.song-cover-item:hover {
   position: relative;
 }
 .song-item .container {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .song-item .container:before,
 .song-item .container:after {
@@ -120,6 +120,7 @@ a.song-cover-item:hover {
 }
 .song-item .song-cover-item {
   text-align: center;
+  padding-bottom: 20px;
 }
 .song-item .song-cover-item img {
   width: 100px;
@@ -261,6 +262,9 @@ footer {
   }
 }
 @media (min-width: 1024px) {
+  .song-item .container {
+    padding: 40px 0;
+  }
   .page-header .de-store-synger {
     margin-left: 0;
   }

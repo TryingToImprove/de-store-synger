@@ -109,12 +109,13 @@ a.song-cover-item{
 
     .container{
         .clearfix();
-        padding:@air-padding 0;
+        padding:20px 0;
     }
 
     .song-cover-item{
         text-align: center;
-
+        padding-bottom: 20px;
+        
         img {
             width:100px;
             height:100px;
@@ -288,7 +289,15 @@ footer {
 }
 
 @media (min-width: 1024px){    
-    
+     .song-item{        
+        .container{
+            padding:40px 0;
+        }
+
+        .song-cover-item{
+        }
+     }
+
     .page-header {
         .de-store-synger{
             margin-left:0;
