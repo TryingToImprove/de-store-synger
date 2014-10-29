@@ -135,8 +135,16 @@ a.song-cover-item:hover {
   line-height: 26px;
 }
 .song-item .video-player {
-  height: 220px;
   width: 100%;
+  text-align: center;
+}
+.song-item .video-player iframe {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 10px;
+}
+.song-item .video-player a:hover {
+  color: #258dfe;
 }
 .page-header {
   position: fixed;
@@ -255,15 +263,20 @@ footer {
   }
   .song-item .video-player {
     max-width: 600px;
-    height: 337px;
     margin-right: 80px;
     float: right;
+  }
+  .song-item .video-player iframe {
     box-shadow: 0px 0px 10px #CCC;
+    height: 337px;
   }
 }
 @media (min-width: 1024px) {
   .song-item .container {
     padding: 40px 0;
+  }
+  .song-item .song-cover-item {
+    padding-bottom: 0;
   }
   .page-header .de-store-synger {
     margin-left: 0;
