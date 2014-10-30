@@ -223,8 +223,9 @@ a.song-cover-item:hover {
   border-radius: 5px;
 }
 footer {
-  background: #f1f1f1;
+  background: #F2B1CA;
   margin-top: 60px;
+  padding: 20px 0;
   height: 150px;
 }
 @media (min-width: 724px) {
