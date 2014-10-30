@@ -50,7 +50,7 @@ a {
   clear: both;
 }
 .song-navigation .song-cover-item {
-  padding: 10px;
+  padding: 15px;
 }
 .song-navigation .song-cover-item img {
   display: inline-block;
@@ -108,7 +108,7 @@ a.song-cover-item:hover {
   position: relative;
 }
 .song-item .container {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .song-item .container:before,
 .song-item .container:after {
@@ -274,7 +274,7 @@ footer {
 }
 @media (min-width: 1024px) {
   .song-item .container {
-    padding: 40px 0;
+    padding: 65px 0;
   }
   .song-item .song-cover-item {
     padding-bottom: 0;
